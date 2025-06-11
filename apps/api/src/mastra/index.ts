@@ -19,6 +19,6 @@ export const mastra = new Mastra({
   deployer: new VercelDeployer({
     teamSlug: "paulie-scanlons-projects",
     projectName: "test-turbo-monorepo-api",
-    token: "Ah2jzuBZcZ1nXlSyV5fpv1jQ"
+    token: process.env.VERCEL_TOKEN!
   })
 });

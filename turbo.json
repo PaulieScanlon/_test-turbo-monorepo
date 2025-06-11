@@ -1,6 +1,7 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
+  "globalEnv": ["NEXT_PUBLIC_MASTRA_API_URL", "OPENAI_API_KEY", "VERCEL_TOKEN"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],

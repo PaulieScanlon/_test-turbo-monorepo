@@ -1,7 +1,7 @@
 import { Mastra } from "@mastra/core/mastra";
 import { PinoLogger } from "@mastra/loggers";
 // import { LibSQLStore } from "@mastra/libsql";
-import { VercelDeployer } from "@mastra/deployer-vercel";
+// import { VercelDeployer } from "@mastra/deployer-vercel";
 import { weatherWorkflow } from "./workflows/weather-workflow";
 import { weatherAgent } from "./agents/weather-agent";
 
@@ -15,10 +15,10 @@ export const mastra = new Mastra({
   logger: new PinoLogger({
     name: "Mastra",
     level: "info"
-  }),
-  deployer: new VercelDeployer({
-    teamSlug: "paulie-scanlons-projects",
-    projectName: "test-turbo-monorepo-api",
-    token: process.env.VERCEL_TOKEN!
   })
+  // deployer: new VercelDeployer({
+  //   teamSlug: "paulie-scanlons-projects",
+  //   projectName: "test-turbo-monorepo-api",
+  //   token: process.env.VERCEL_TOKEN!
+  // })
 });

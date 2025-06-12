@@ -27,7 +27,7 @@ export default function Form() {
         <input name="city" placeholder="Enter city" required />
         <button type="submit">Get Weather</button>
       </form>
-      {result && <pre>{result}</pre>}
+      {result && <pre style={{ whiteSpace: "normal" }}>{result}</pre>}
     </>
   );
 }
